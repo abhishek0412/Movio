@@ -1,0 +1,107 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behaviour
+title: 'bug: '
+labels: ['bug', 'triage']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the sections below to help us diagnose and fix it.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of the bug.
+      placeholder: "When I click the 'Like' button on a book card, nothing happens..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Detailed steps to reproduce the behaviour.
+      placeholder: |
+        1. Go to the Books page
+        2. Click on any book card
+        3. Click the 'Like' button
+        4. Observe that the heart icon does not change
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: What you expected to happen.
+      placeholder: 'The heart icon should fill in and the book should appear in My Library.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behaviour
+      description: What actually happened.
+      placeholder: 'The heart icon remains empty and no feedback is shown.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Videos
+      description: If applicable, add screenshots or screen recordings.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser(s) are you seeing this on?
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      multiple: true
+      options:
+        - Desktop
+        - Tablet
+        - Mobile
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - '🔴 Critical — App crashes or data loss'
+        - '🟡 High — Major feature broken'
+        - '🟠 Medium — Feature works but incorrectly'
+        - '🟢 Low — Minor visual or UX issue'
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other context about the problem (console errors, network tab info, etc.).
+    validations:
+      required: false

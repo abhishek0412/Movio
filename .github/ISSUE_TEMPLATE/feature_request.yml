@@ -1,0 +1,77 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement
+title: 'feat: '
+labels: ['enhancement']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a feature! Please describe what you'd like and why it would be useful.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? Is it related to a frustration?
+      placeholder: "I'm always frustrated when I can't filter books by house..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the solution you'd like.
+      placeholder: 'Add a dropdown filter on the Books page that lets users filter by Hogwarts house.'
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions or features you've considered.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How do we know this feature is complete?
+      placeholder: |
+        - [ ] Dropdown shows all four houses
+        - [ ] Selecting a house filters the book list
+        - [ ] "All" option resets the filter
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - '🔴 Critical — Blocking release'
+        - '🟡 High — Important for next release'
+        - '🟠 Medium — Nice to have'
+        - '🟢 Low — Future consideration'
+    validations:
+      required: true
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups / References
+      description: Any wireframes, designs, or references that illustrate the feature.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other context about the feature request.
+    validations:
+      required: false
