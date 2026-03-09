@@ -15,12 +15,12 @@
 Create `src/components/pages/{PageName}.tsx`:
 
 ```tsx
-import { useDocumentTitle } from '@/hooks';
+import { useDocumentTitle } from "@/hooks";
 
 const {
   PageName,
 } = () => {
-  useDocumentTitle('{PageName} — Movio');
+  useDocumentTitle("{PageName} — Movio");
 
   return (
     <div className="container-fluid py-4">

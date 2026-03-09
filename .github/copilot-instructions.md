@@ -49,8 +49,8 @@ Every folder (`hooks/`, `constants/`, `types/`, `utils/`, `contexts/`) **must** 
 
 ```tsx
 // src/hooks/index.tsx
-export { useFetch } from './useFetch';
-export { useDarkMode } from './useDarkMode';
+export { useFetch } from "./useFetch";
+export { useDarkMode } from "./useDarkMode";
 ```
 
 ---
@@ -96,7 +96,7 @@ interface User {
 }
 
 // ✅ DO: Use type aliases for unions, intersections, and utility types
-type Status = 'idle' | 'loading' | 'success' | 'error';
+type Status = "idle" | "loading" | "success" | "error";
 type ApiResponse<T> = { data: T; status: number };
 
 // ❌ DON'T: Use `any` — use `unknown` and narrow instead
@@ -249,8 +249,8 @@ try {
   const data: T = await response.json();
   return data;
 } catch (error) {
-  if (error instanceof DOMException && error.name === 'AbortError') return;
-  console.error('Fetch failed:', error);
+  if (error instanceof DOMException && error.name === "AbortError") return;
+  console.error("Fetch failed:", error);
   throw error;
 }
 ```
@@ -277,14 +277,14 @@ src/components/common/Card.tsx → src/__tests__/components/Card.test.tsx
 ### Testing Pattern
 
 ```tsx
-import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect } from 'vitest';
-import { MovieCard } from '../components/common/MovieCard';
+import { render, screen, fireEvent } from "@testing-library/react";
+import { describe, it, expect } from "vitest";
+import { MovieCard } from "../components/common/MovieCard";
 
-describe('MovieCard', () => {
-  it('renders the movie title', () => {
+describe("MovieCard", () => {
+  it("renders the movie title", () => {
     render(<MovieCard title="Inception" year={2010} onSelect={vi.fn()} />);
-    expect(screen.getByText('Inception')).toBeInTheDocument();
+    expect(screen.getByText("Inception")).toBeInTheDocument();
   });
 });
 ```

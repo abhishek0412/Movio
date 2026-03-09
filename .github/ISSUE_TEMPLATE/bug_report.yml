@@ -1,7 +1,7 @@
 name: 🐛 Bug Report
 description: Report a bug or unexpected behaviour
-title: 'bug: '
-labels: ['bug', 'triage']
+title: "bug: "
+labels: ["bug", "triage"]
 assignees: []
 body:
   - type: markdown
@@ -36,7 +36,7 @@ body:
     attributes:
       label: Expected Behaviour
       description: What you expected to happen.
-      placeholder: 'The heart icon should fill in and the movie should appear in My Library.'
+      placeholder: "The heart icon should fill in and the movie should appear in My Library."
     validations:
       required: true
 
@@ -45,7 +45,7 @@ body:
     attributes:
       label: Actual Behaviour
       description: What actually happened.
-      placeholder: 'The heart icon remains empty and no feedback is shown.'
+      placeholder: "The heart icon remains empty and no feedback is shown."
     validations:
       required: true
 
@@ -91,10 +91,10 @@ body:
       label: Severity
       description: How severe is this bug?
       options:
-        - '🔴 Critical — App crashes or data loss'
-        - '🟡 High — Major feature broken'
-        - '🟠 Medium — Feature works but incorrectly'
-        - '🟢 Low — Minor visual or UX issue'
+        - "🔴 Critical — App crashes or data loss"
+        - "🟡 High — Major feature broken"
+        - "🟠 Medium — Feature works but incorrectly"
+        - "🟢 Low — Minor visual or UX issue"
     validations:
       required: true
 

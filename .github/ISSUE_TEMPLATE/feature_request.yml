@@ -1,7 +1,7 @@
 name: ✨ Feature Request
 description: Suggest a new feature or enhancement
-title: 'feat: '
-labels: ['enhancement']
+title: "feat: "
+labels: ["enhancement"]
 assignees: []
 body:
   - type: markdown
@@ -23,7 +23,7 @@ body:
     attributes:
       label: Proposed Solution
       description: Describe the solution you'd like.
-      placeholder: 'Add a dropdown filter on the Movies page that lets users filter by genre.'
+      placeholder: "Add a dropdown filter on the Movies page that lets users filter by genre."
     validations:
       required: true
 
@@ -53,10 +53,10 @@ body:
       label: Priority
       description: How important is this feature?
       options:
-        - '🔴 Critical — Blocking release'
-        - '🟡 High — Important for next release'
-        - '🟠 Medium — Nice to have'
-        - '🟢 Low — Future consideration'
+        - "🔴 Critical — Blocking release"
+        - "🟡 High — Important for next release"
+        - "🟠 Medium — Nice to have"
+        - "🟢 Low — Future consideration"
     validations:
       required: true
 

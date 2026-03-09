@@ -1,7 +1,7 @@
 name: 📖 Story
 description: A user story for planned development work
-title: 'story: '
-labels: ['story']
+title: "story: "
+labels: ["story"]
 assignees: []
 body:
   - type: markdown
@@ -13,7 +13,7 @@ body:
     id: user-story
     attributes:
       label: User Story
-      description: 'Use the format: As a [role], I want [feature] so that [benefit].'
+      description: "Use the format: As a [role], I want [feature] so that [benefit]."
       placeholder: "As a user, I want to search for movies by title so that I can quickly find what I'm looking for."
     validations:
       required: true
@@ -45,12 +45,12 @@ body:
       label: Estimate
       description: Story point estimate.
       options:
-        - '1 — Trivial (< 1 hour)'
-        - '2 — Small (1-2 hours)'
-        - '3 — Medium (half day)'
-        - '5 — Large (full day)'
-        - '8 — Extra Large (2+ days)'
-        - '13 — Epic-sized (needs breakdown)'
+        - "1 — Trivial (< 1 hour)"
+        - "2 — Small (1-2 hours)"
+        - "3 — Medium (half day)"
+        - "5 — Large (full day)"
+        - "8 — Extra Large (2+ days)"
+        - "13 — Epic-sized (needs breakdown)"
     validations:
       required: false
 
@@ -59,6 +59,6 @@ body:
     attributes:
       label: Dependencies
       description: List any issues that must be completed before this one.
-      placeholder: 'Depends on #42, #43'
+      placeholder: "Depends on #42, #43"
     validations:
       required: false
