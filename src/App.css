@@ -1,0 +1,42 @@
+:root {
+  --movio-primary: #6c63ff;
+  --movio-bg: #ffffff;
+  --movio-text: #212529;
+}
+
+[data-bs-theme="dark"] {
+  --movio-bg: #121212;
+  --movio-text: #e0e0e0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--movio-primary);
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 1100;
+  transition: top 0.2s;
+}
+
+a.skip-link:focus {
+  top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

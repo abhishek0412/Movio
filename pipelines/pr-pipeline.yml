@@ -1,0 +1,49 @@
+# ──────────────────────────────────────────────────────────────────────
+# PR Pipeline — Pull Request Validation
+# Triggers when a PR is raised targeting main.
+# Validates: install, lint, type-check, format-check, unit tests, build.
+# ──────────────────────────────────────────────────────────────────────
+
+trigger: none
+
+pr:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  NODE_VERSION: "22.x"
+
+steps:
+  - task: NodeTool@0
+    displayName: "Use Node.js $(NODE_VERSION)"
+    inputs:
+      versionSpec: "$(NODE_VERSION)"
+
+  - script: npm ci
+    displayName: "Install dependencies"
+
+  - script: npm run lint
+    displayName: "Lint"
+
+  - script: npm run typecheck
+    displayName: "Type check"
+
+  - script: npm run format:check
+    displayName: "Format check"
+
+  - script: npm test
+    displayName: "Unit tests"
+
+  - script: npm run build
+    displayName: "Build"
+
+  - task: PublishBuildArtifacts@1
+    displayName: "Publish build artifact"
+    inputs:
+      PathtoPublish: "dist"
+      ArtifactName: "movio-pr-build"
+      publishLocation: "Container"

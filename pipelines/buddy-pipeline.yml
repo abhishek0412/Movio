@@ -1,0 +1,42 @@
+# ──────────────────────────────────────────────────────────────────────
+# Buddy Pipeline — Continuous Integration (every check-in)
+# Triggers on every push to any branch.
+# Validates: install, lint, type-check, format-check, unit tests, build.
+# ──────────────────────────────────────────────────────────────────────
+
+trigger:
+  branches:
+    include:
+      - "*"
+
+pr: none
+
+pool:
+  vmImage: "ubuntu-latest"
+
+variables:
+  NODE_VERSION: "22.x"
+
+steps:
+  - task: NodeTool@0
+    displayName: "Use Node.js $(NODE_VERSION)"
+    inputs:
+      versionSpec: "$(NODE_VERSION)"
+
+  - script: npm ci
+    displayName: "Install dependencies"
+
+  - script: npm run lint
+    displayName: "Lint"
+
+  - script: npm run typecheck
+    displayName: "Type check"
+
+  - script: npm run format:check
+    displayName: "Format check"
+
+  - script: npm test
+    displayName: "Unit tests"
+
+  - script: npm run build
+    displayName: "Build"

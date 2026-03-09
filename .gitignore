@@ -11,6 +11,8 @@ dist/
 .env.test.local
 .env.production.local
 .env.production
+.env.qa
+.env.staging
 
 # IDE / Editor
 .vscode/*
