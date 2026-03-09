@@ -14,7 +14,7 @@ body:
     attributes:
       label: Problem Statement
       description: What problem does this feature solve? Is it related to a frustration?
-      placeholder: "I'm always frustrated when I can't filter books by house..."
+      placeholder: "I'm always frustrated when I can't filter movies by genre..."
     validations:
       required: true
 
@@ -23,7 +23,7 @@ body:
     attributes:
       label: Proposed Solution
       description: Describe the solution you'd like.
-      placeholder: 'Add a dropdown filter on the Books page that lets users filter by Hogwarts house.'
+      placeholder: 'Add a dropdown filter on the Movies page that lets users filter by genre.'
     validations:
       required: true
 
@@ -41,8 +41,8 @@ body:
       label: Acceptance Criteria
       description: How do we know this feature is complete?
       placeholder: |
-        - [ ] Dropdown shows all four houses
-        - [ ] Selecting a house filters the book list
+        - [ ] Dropdown shows all available genres
+        - [ ] Selecting a genre filters the movie list
         - [ ] "All" option resets the filter
     validations:
       required: true

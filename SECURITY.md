@@ -17,7 +17,7 @@ We take security seriously. If you discover a security vulnerability, please rep
 
 1. **DO NOT** open a public GitHub issue for security vulnerabilities.
 2. Email the maintainers at: **[security contact — update this]**
-3. Or use [GitHub Security Advisories](https://github.com/abhishek0412/videoparlour/security/advisories/new) to report privately.
+3. Or use [GitHub Security Advisories](https://github.com/abhishek0412/Movio/security/advisories/new) to report privately.
 
 ### What to Include
 

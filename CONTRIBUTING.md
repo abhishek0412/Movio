@@ -1,4 +1,4 @@
-# Contributing to VideoParlour
+# Contributing to Movio
 
 Thank you for your interest in contributing! This guide will help you get started.
 
@@ -36,8 +36,8 @@ This project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDU
 # 1. Fork the repository on GitHub
 
 # 2. Clone your fork
-git clone https://github.com/<your-username>/videoparlour.git
-cd videoparlour
+git clone https://github.com/<your-username>/Movio.git
+cd Movio
 
 # 3. Install dependencies
 npm install
@@ -57,7 +57,7 @@ The app will be available at `http://localhost:5173`.
 
 ### 1. Find or Create an Issue
 
-- Check [existing issues](https://github.com/abhishek0412/videoparlour/issues) before creating a new one.
+- Check [existing issues](https://github.com/abhishek0412/Movio/issues) before creating a new one.
 - Use the appropriate issue template (Bug Report, Feature Request, or Story).
 - Wait for the issue to be triaged and assigned before starting work.
 
@@ -158,7 +158,7 @@ Follow [Conventional Commits](https://www.conventionalcommits.org/):
 ```
 <type>(<scope>): <description>
 
-feat(books):     add search filter to Books page
+feat(movies):    add search filter to Movies page
 fix(nav):        resolve dropdown not closing on mobile
 refactor(hooks): extract useDebounce from SearchButton
 test(hooks):     add useFetch unit tests
@@ -218,6 +218,6 @@ Reviewers will check:
 
 ## Questions?
 
-If you have questions, open a [Discussion](https://github.com/abhishek0412/videoparlour/discussions) or comment on the relevant issue.
+If you have questions, open a [Discussion](https://github.com/abhishek0412/Movio/discussions) or comment on the relevant issue.
 
 Thank you for contributing! 🎬

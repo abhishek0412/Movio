@@ -14,7 +14,7 @@ body:
     attributes:
       label: Bug Description
       description: A clear and concise description of the bug.
-      placeholder: "When I click the 'Like' button on a book card, nothing happens..."
+      placeholder: "When I click the 'Like' button on a movie card, nothing happens..."
     validations:
       required: true
 
@@ -24,8 +24,8 @@ body:
       label: Steps to Reproduce
       description: Detailed steps to reproduce the behaviour.
       placeholder: |
-        1. Go to the Books page
-        2. Click on any book card
+        1. Go to the Movies page
+        2. Click on any movie card
         3. Click the 'Like' button
         4. Observe that the heart icon does not change
     validations:
@@ -36,7 +36,7 @@ body:
     attributes:
       label: Expected Behaviour
       description: What you expected to happen.
-      placeholder: 'The heart icon should fill in and the book should appear in My Library.'
+      placeholder: 'The heart icon should fill in and the movie should appear in My Library.'
     validations:
       required: true
 

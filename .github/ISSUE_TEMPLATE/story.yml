@@ -14,7 +14,7 @@ body:
     attributes:
       label: User Story
       description: 'Use the format: As a [role], I want [feature] so that [benefit].'
-      placeholder: "As a user, I want to search for books by title so that I can quickly find what I'm looking for."
+      placeholder: "As a user, I want to search for movies by title so that I can quickly find what I'm looking for."
     validations:
       required: true
 
@@ -24,7 +24,7 @@ body:
       label: Acceptance Criteria
       description: Specific, testable criteria for completion.
       placeholder: |
-        - [ ] Search input is visible on the Books page
+        - [ ] Search input is visible on the Movies page
         - [ ] Results filter as the user types (debounced 300ms)
         - [ ] Empty state shown when no results match
         - [ ] Search input is accessible (has label, keyboard navigable)

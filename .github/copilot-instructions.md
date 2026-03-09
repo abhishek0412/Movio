@@ -151,7 +151,7 @@ const MovieCard = ({ title, year, onSelect }: MovieCardProps) => {
 - Handle loading, error, and empty states in every data-fetching component.
 
 ```tsx
-const { data, loading, error } = useFetch<Book[]>(API_ENDPOINTS.BOOKS);
+const { data, loading, error } = useFetch<Movie[]>(API_ENDPOINTS.MOVIES);
 
 if (loading) return <Spinner />;
 if (error) return <Alert variant="danger" message={error} />;

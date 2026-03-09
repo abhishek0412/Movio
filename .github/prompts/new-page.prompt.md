@@ -20,7 +20,7 @@ import { useDocumentTitle } from '@/hooks';
 const {
   PageName,
 } = () => {
-  useDocumentTitle('{PageName} — VideoParlour');
+  useDocumentTitle('{PageName} — Movio');
 
   return (
     <div className="container-fluid py-4">
